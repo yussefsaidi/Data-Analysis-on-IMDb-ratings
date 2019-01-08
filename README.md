@@ -1,2 +1,8 @@
 # Data-Analysis-on-IMDb-ratings
-Study of what factors affect the rating of a movie on IMDb.
+Objective: Study of what factors affect the rating of a movie on IMDb.
+
+We looked at the following:
+- Length of a movie
+- Genre of a movie
+
+
