@@ -1,0 +1,20 @@
+library(tidyverse)
+library(scales)
+
+
+df_ratings <- read_tsv('title.ratings.tsv', na = "\\N", quote = '')
+df_basis <- read_tsv('title.basics.tsv', na="\\N", quote='')
+
+plot <- ggplot(df_ratings, aes(x = numVotes, y = averageRating)) + geom_bin2d()+
+scale_x_log10(labels = comma)+
+scale_y_continuous(breaks = 1:10)+
+scale_fill_viridis_c(labels = comma)+
+theme_minimal(base_family = "Source Sans Pro", base_size = 7) +
+	labs(title = "Relationship - Amount of Votes and Average Movie Rating",
+		subtitle="Data from IMDb retrieved on November 29th, 2018",
+		x ="Number of Votes",
+		y ="Average User Rating",
+		caption ="Yussef Saidi & Kailie Yuan",
+		fill = "# Movies")
+ggsave("IMDb - Average rating VS Num Votes.png", plot, width=4, height=3)
+

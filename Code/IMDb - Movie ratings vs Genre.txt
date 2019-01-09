@@ -1,0 +1,35 @@
+library(tidyverse)
+library(scales)
+library(stringr)
+
+# Rating vs Genres
+
+df_ratings <- read_tsv('title.ratings.tsv', na="\\N", quote='') %>%
+select(tconst, averageRating, numVotes)
+
+df_basics <- read_tsv('title.basics.tsv', na="\\N", quote='') %>% 
+filter(str_detect(titleType, "movie")) %>%
+select(tconst,genres)
+
+
+df_basics <-separate(df_basics, genres, into=c("FirstGenre","SecondGenre","ThirdGenre"),sep=",")
+df_basics <- df_basics %>% left_join(df_ratings)
+df_basics %>% head()
+df_basics<-df_basics[complete.cases(df_basics[ ,2]),]
+
+
+
+plot <- ggplot(df_basics %>% filter(numVotes >=10), aes(x=FirstGenre, y=averageRating))+
+	geom_bin2d()+
+	scale_y_continuous(breaks = 0:10)+
+	scale_fill_viridis_c(option="inferno", labels= comma) +
+	theme_minimal(base_family= "Source Sans Pro", base_size = 8) +
+	theme(axis.text.x=element_text(angle=90, vjust=0.5, size=5)) +
+	labs(title = "IV. Relationship between Movie Average Rating and Genre",
+		subtitle="Data retrieved from IMDb on November 28th 2018",
+		x="Genre",
+		y="Average User Rating",
+		caption="Yussef Saidi & Kailie Yuan",
+		fill = "# Movies")
+
+ggsave("IMDb - Movie ratings VS Genre PLASMA.png", plot, width=4, height=3)
