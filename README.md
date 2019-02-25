@@ -8,3 +8,7 @@ We looked at the following:
 - Rating vs Time of release of movies
 - Rating vs Number of votes for a movie
 
+Results(Look at pdf file for more in depth explanation):
+
+- Ratings are restricted to the Four Point Scale
+- Ratings are affected by genre and duration
