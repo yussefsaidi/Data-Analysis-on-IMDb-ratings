@@ -1,4 +1,7 @@
 # Data-Analysis-on-IMDb-ratings
+•	Script to analyze what factors (genre, length of movie) affect the IMDb rating of movies nowadays, based on IMDb’s database 
+•	Utilized RGui, ggplot, IMDb databases
+
 Objective: Study of what factors affect the rating of a movie on IMDb.
 Technology used: RGui for the code in R, and ggplot to help graph our results easier.
 
