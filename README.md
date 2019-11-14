@@ -20,9 +20,13 @@ You need RGui, or any other IDE that supports the R language.
 
 * [RGui](https://www.r-project.org/) - The IDE to run R scripts
 * [ggplot](https://ggplot2.tidyverse.org/reference/ggplot.html) - ggplot2 is a data visualization package for the statistical programming language R, used to help creating graphs
-* [IMDb Databases](https://www.imdb.com/interfaces/) - Used to conduct our analysis
+* [IMDb Databases](https://www.imdb.com/interfaces/) - Data analyzed to conduct our study.
 
 ## Authors
+
+## Results
+
+You can take a look at the [Results and Analysis of IMDb ratings.pdf](https://github.com/yussefsaidi/Data-Analysis-on-IMDb-ratings/blob/master/Results%20and%20Analysis%20of%20IMDb%20ratings.pdf) to read the study, with graphs and conclusions.
 
 * **Yussef Saidi** - *Initial work*
 
