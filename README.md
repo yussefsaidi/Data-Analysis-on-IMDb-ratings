@@ -9,95 +9,20 @@ We looked at the following:
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The analysis can be replicated simply by coping pasting the code and running it.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+You need RGui, or any other IDE that supports the R language.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [RGui](https://www.r-project.org/) - The IDE to run R scripts
+* [ggplot](https://ggplot2.tidyverse.org/reference/ggplot.html) - ggplot2 is a data visualization package for the statistical programming language R, used to help creating graphs
+* [IMDb Databases](https://www.imdb.com/interfaces/) - Used to conduct our analysis
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Yussef Saidi** - *Initial work*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-# Data-Analysis-on-IMDb-ratings
-•	
-•	Utilized RGui, ggplot to help graph the results better, IMDb databases for the data.
-
-
-
-Results(Look at pdf file for more in depth explanation):
-
-- Ratings are restricted to the Four Point Scale
-- Ratings are affected by genre and duration
