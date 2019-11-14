@@ -24,9 +24,11 @@ You need RGui, or any other IDE that supports the R language.
 
 ## Authors
 
+* **Yussef Saidi** - *Initial work*
+
 ## Results
 
 You can take a look at the [Results and Analysis of IMDb ratings.pdf](https://github.com/yussefsaidi/Data-Analysis-on-IMDb-ratings/blob/master/Results%20and%20Analysis%20of%20IMDb%20ratings.pdf) to read the study, with graphs and conclusions.
 
-* **Yussef Saidi** - *Initial work*
+
 
